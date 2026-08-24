@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kite Call · Amsterdam</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:opsz,wght@9..144,500;9..144,620&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-kicker">Jonathan Kandel · from Amsterdam</div>
+        <h1>Kite Call</h1>
+      </div>
+      <div class="meta" id="stamp">Loading forecast…</div>
+    </header>
+
+    <p class="status" id="status">Fetching Open-Meteo…</p>
+    <section class="hero" id="hero"></section>
+    <section class="week" id="week"></section>
+
+    <div class="toolbar">
+      <button class="chip active" data-filter="all">All spots</button>
+      <button class="chip" data-filter="near">Near Amsterdam</button>
+      <button class="chip" data-filter="northsea">North Sea</button>
+      <button class="chip" data-filter="zeeland">Zeeland</button>
+      <div class="compare" id="compare"></div>
+    </div>
+
+    <section class="spots" id="spots"></section>
+
+    <aside class="safety">
+      <strong>Safety.</strong> Offshore = don’t go. Side-offshore is a walk of shame or worse. This app ranks Open-Meteo 10 m model wind for daylight hours (10:00–19:00 Europe/Amsterdam). It is not a KNMI warning, not a tide table, and not local knowledge. Check flags, zonering, oysters, current, and whether the spot is even open (Grevelingendam Noord is seasonal). Scores are honest, not hype.
+    </aside>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>

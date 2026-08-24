@@ -1,0 +1,7 @@
+shots/
+.DS_Store
+*.pyc
+__pycache__/
+.vercel
+*.log
+.env
